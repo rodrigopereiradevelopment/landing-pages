@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Pata & Vida — Veterinária</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,300;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <span class="logo-icon">✦</span>
+      Pata & Vida
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#equipe">Equipe</a></li>
+      <li><a href="#agendamento" class="nav-cta">Agendar consulta</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-tag reveal">Mogi Mirim, SP · Desde 2010</p>
+      <h1 class="hero-title reveal">
+        Cuidado com<br /><em>ciência</em> e<br />carinho.
+      </h1>
+      <p class="hero-sub reveal">
+        Medicina veterinária completa para cães, gatos e pequenos animais.
+        Atendimento humanizado, equipe especializada, estrutura moderna.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#agendamento" class="btn btn-primary">Agendar consulta</a>
+        <a href="#servicos" class="btn btn-ghost">Nossos serviços</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <strong>+4.800</strong>
+          <span>pacientes atendidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>14</strong>
+          <span>anos de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <strong>98%</strong>
+          <span>de satisfação</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="visual-card vc-1">
+        <div class="vc-icon">🐾</div>
+        <p>Consulta clínica</p>
+      </div>
+      <div class="visual-blob"></div>
+      <div class="visual-card vc-2">
+        <div class="vc-icon">💉</div>
+        <p>Vacinação em dia</p>
+      </div>
+      <div class="visual-ring"></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Serviços</span>
+        <h2 class="section-title">Tudo que seu pet precisa,<br /><em>em um só lugar.</em></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon si-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Consulta Clínica</h3>
+          <p>Avaliação completa, diagnóstico preciso e acompanhamento do histórico do seu animal.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon si-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+          </div>
+          <h3>Vacinação</h3>
+          <p>Calendário vacinal completo com as principais vacinas e lembretes de reforço.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon si-warm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+          </div>
+          <h3>Cirurgia</h3>
+          <p>Centro cirúrgico equipado para procedimentos de pequeno e médio porte com total segurança.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon si-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z"/></svg>
+          </div>
+          <h3>Exames e Imagem</h3>
+          <p>Raio-X, ultrassonografia, hemograma e demais exames laboratoriais com resultado rápido.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon si-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Internação 24h</h3>
+          <p>Monitoramento contínuo com equipe presente 24 horas para casos que exigem observação.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon si-warm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+          </div>
+          <h3>Estética Animal</h3>
+          <p>Banho, tosa, hidratação e cuidados estéticos para deixar seu pet sempre bonito e saudável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-text reveal">
+        <span class="section-tag">Nossa história</span>
+        <h2 class="section-title">Mais de uma década<br /><em>cuidando de quem você ama.</em></h2>
+        <p>A Clínica Pata & Vida nasceu em 2010 com uma missão simples: oferecer medicina veterinária de qualidade com o cuidado de quem ama animais. Começamos em uma sala pequena no centro de Mogi Mirim e hoje somos referência na região.</p>
+        <p>Nossa equipe combina experiência técnica com escuta ativa — porque entendemos que por trás de cada paciente há uma família que merece respeito e transparência.</p>
+        <div class="sobre-badges">
+          <span class="badge">CFMV Credenciada</span>
+          <span class="badge">ISO 9001</span>
+          <span class="badge">Farmácia Própria</span>
+        </div>
+      </div>
+      <div class="sobre-visual reveal">
+        <div class="sobre-img-wrap">
+          <div class="sobre-img-main"></div>
+          <div class="sobre-img-card">
+            <strong>+4.800</strong>
+            <span>pets atendidos com amor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="section" id="equipe">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Equipe</span>
+        <h2 class="section-title">Profissionais que<br /><em>fazem a diferença.</em></h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av: #d4e8d0;">
+            <span>DM</span>
+          </div>
+          <h3>Dra. Marina Souza</h3>
+          <p class="team-role">Clínica Geral · CRMV 12.345</p>
+          <p class="team-bio">Especialista em medicina interna de pequenos animais. 12 anos de experiência.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av: #d0dde8;">
+            <span>DC</span>
+          </div>
+          <h3>Dr. Carlos Mendes</h3>
+          <p class="team-role">Cirurgia · CRMV 8.901</p>
+          <p class="team-bio">Pós-graduado em cirurgia de tecidos moles. Referência regional em procedimentos complexos.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar" style="--av: #e8dfd0;">
+            <span>DA</span>
+          </div>
+          <h3>Dra. Ana Ribeiro</h3>
+          <p class="team-role">Dermatologia · CRMV 15.678</p>
+          <p class="team-bio">Especialista em dermatologia e alergologia veterinária com atuação em São Paulo e região.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDAMENTO -->
+  <section class="agendamento" id="agendamento">
+    <div class="container agendamento-grid">
+      <div class="ag-info reveal">
+        <span class="section-tag">Agendamento</span>
+        <h2 class="section-title">Marque a consulta<br /><em>do seu pet hoje.</em></h2>
+        <p>Preencha o formulário e nossa equipe entrará em contato para confirmar o horário.</p>
+        <div class="ag-items">
+          <div class="ag-item">
+            <div class="ag-dot"></div>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Acácias, 320 — Jardim Europa<br />Mogi Mirim, SP · CEP 13800-000</p>
+            </div>
+          </div>
+          <div class="ag-item">
+            <div class="ag-dot"></div>
+            <div>
+              <strong>Horário de atendimento</strong>
+              <p>Seg – Sex: 8h às 20h<br />Sáb: 8h às 17h · Dom: emergências</p>
+            </div>
+          </div>
+          <div class="ag-item">
+            <div class="ag-dot"></div>
+            <div>
+              <strong>Contato</strong>
+              <p>(19) 99888-0000 · WhatsApp disponível</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ag-form reveal">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Seu nome</label>
+              <input type="text" name="nome" placeholder="Nome completo" required />
+            </div>
+            <div class="form-group">
+              <label>Telefone</label>
+              <input type="tel" name="telefone" placeholder="(19) 99999-0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nome do pet</label>
+              <input type="text" name="pet" placeholder="Como ele se chama?" required />
+            </div>
+            <div class="form-group">
+              <label>Espécie</label>
+              <select name="especie" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>Cão</option>
+                <option>Gato</option>
+                <option>Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Motivo da consulta</label>
+            <textarea name="mensagem" rows="3" placeholder="Descreva brevemente o que acontece com seu pet..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Solicitar agendamento
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo"><span>✦</span> Pata & Vida</p>
+        <p class="footer-copy">Clínica Veterinária · Mogi Mirim, SP</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Facebook</a>
+      </div>
+      <p class="footer-legal">© 2024 Clínica Pata & Vida. Todos os direitos reservados.</p>
+    </div>
+
+   <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; text-align: center;">
+        <a href="../index.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+          ← Voltar ao Portfólio de Landing Pages
+        </a>
+      </div>
+
+      <p class="footer-legal" style="width: 100%; margin-top: 10px;">© 2024 Clínica Pata & Vida. Todos os direitos reservados.</p>
+    
+  </footer>
+
+  
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

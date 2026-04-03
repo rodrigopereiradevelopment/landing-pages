@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Raiz — Transformando Vidas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Instituto Raiz</a>
+    <ul class="nav-links">
+      <li><a href="#missao">Missão</a></li>
+      <li><a href="#programas">Programas</a></li>
+      <li><a href="#impacto">Impacto</a></li>
+      <li><a href="#contato">Voluntariar</a></li>
+      <li><a href="#doe" class="nav-cta">Doe agora</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-tag reveal">Mogi Mirim, SP · Desde 2008</p>
+        <h1 class="hero-title reveal">
+          Toda raiz<br />precisa de <em>solo</em><br />fértil.
+        </h1>
+        <p class="hero-sub reveal">
+          Há 16 anos transformamos realidades por meio da educação, cultura e geração de renda para famílias em situação de vulnerabilidade.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#doe" class="btn btn-primary">Quero doar</a>
+          <a href="#contato" class="btn btn-ghost">Ser voluntário</a>
+        </div>
+      </div>
+      <div class="hero-numbers reveal">
+        <div class="number-card">
+          <strong>1.240</strong>
+          <span>famílias atendidas em 2024</span>
+        </div>
+        <div class="number-card">
+          <strong>380</strong>
+          <span>crianças em programas educacionais</span>
+        </div>
+        <div class="number-card">
+          <strong>96</strong>
+          <span>voluntários ativos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section class="missao" id="missao">
+    <div class="container missao-grid">
+      <div class="missao-text reveal">
+        <span class="section-tag">Nossa missão</span>
+        <h2 class="section-title">Acreditamos que<br /><em>dignidade é direito,</em><br />não privilégio.</h2>
+        <p>O Instituto Raiz nasceu da convicção de que mudança social começa pelo fortalecimento das pessoas. Trabalhamos com educação, capacitação profissional e apoio psicossocial para que cada família encontre seu próprio caminho.</p>
+        <p>Somos uma organização sem fins lucrativos, reconhecida pelo Ministério da Justiça, auditada anualmente e comprometida com total transparência no uso dos recursos.</p>
+        <div class="missao-selos">
+          <span class="selo">OSCIP Certificada</span>
+          <span class="selo">Transparência Total</span>
+          <span class="selo">Auditoria Anual</span>
+        </div>
+      </div>
+      <div class="missao-visual reveal">
+        <div class="visual-quote">
+          <span class="quote-mark">"</span>
+          <p>Quando uma criança aprende a ler, uma família inteira começa a enxergar um futuro diferente.</p>
+          <footer>— Ana Beatriz, mãe atendida pelo programa</footer>
+        </div>
+        <div class="visual-accent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMAS -->
+  <section class="section" id="programas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Programas que<br /><em>transformam vidas.</em></h2>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="prog-num">01</div>
+          <h3>Raiz Educação</h3>
+          <p>Reforço escolar, alfabetização de adultos e incentivo à leitura para crianças e jovens de 6 a 17 anos.</p>
+          <div class="prog-meta">
+            <span>380 beneficiados</span>
+            <span>3 unidades</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <div class="prog-num">02</div>
+          <h3>Raiz Trabalho</h3>
+          <p>Cursos profissionalizantes gratuitos em gastronomia, costura, informática e empreendedorismo.</p>
+          <div class="prog-meta">
+            <span>210 formados em 2024</span>
+            <span>12 parceiros</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <div class="prog-num">03</div>
+          <h3>Raiz Família</h3>
+          <p>Apoio psicossocial, acompanhamento de casos e orientação jurídica para famílias em situação de vulnerabilidade.</p>
+          <div class="prog-meta">
+            <span>650 atendimentos/mês</span>
+            <span>4 assistentes sociais</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <div class="prog-num">04</div>
+          <h3>Raiz Cultura</h3>
+          <p>Oficinas de música, dança, teatro e artes visuais como ferramentas de expressão e desenvolvimento humano.</p>
+          <div class="prog-meta">
+            <span>180 jovens/semana</span>
+            <span>8 oficinas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACTO -->
+  <section class="impacto" id="impacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nosso impacto</span>
+        <h2 class="section-title">Números que<br /><em>representam pessoas.</em></h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-item reveal">
+          <strong>16</strong>
+          <span>anos de atuação</span>
+        </div>
+        <div class="impact-item reveal">
+          <strong>+8.400</strong>
+          <span>vidas impactadas</span>
+        </div>
+        <div class="impact-item reveal">
+          <strong>R$ 2,1M</strong>
+          <span>investidos em programas</span>
+        </div>
+        <div class="impact-item reveal">
+          <strong>94%</strong>
+          <span>dos jovens formados empregados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOE -->
+  <section class="doe" id="doe">
+    <div class="container doe-grid">
+      <div class="doe-text reveal">
+        <span class="section-tag">Doe agora</span>
+        <h2 class="section-title">Sua contribuição<br /><em>muda histórias.</em></h2>
+        <p>Cada real doado vai diretamente para os nossos programas. Veja o impacto de cada valor:</p>
+        <div class="doe-valores">
+          <div class="valor-card">
+            <strong>R$ 30</strong>
+            <span>Material escolar de uma criança por 1 mês</span>
+          </div>
+          <div class="valor-card">
+            <strong>R$ 80</strong>
+            <span>Curso profissionalizante de 1 jovem</span>
+          </div>
+          <div class="valor-card">
+            <strong>R$ 150</strong>
+            <span>Apoio psicossocial a 1 família por 1 mês</span>
+          </div>
+        </div>
+        <p class="doe-note">Doações são dedutíveis do IR. Emitimos recibo oficial.</p>
+      </div>
+      <div class="doe-form reveal">
+        <div class="doe-pix">
+          <p class="pix-label">Doe via PIX</p>
+          <div class="pix-key">
+            <span>CNPJ:00.000.000/0001-00</span>
+            <button class="copy-btn" id="copyPix">Copiar chave</button>
+          </div>
+          <div class="pix-divider"><span>ou entre em contato</span></div>
+        </div>
+        <form id="contactForm">
+          <div class="form-group">
+            <label>Seu nome</label>
+            <input type="text" name="nome" placeholder="Nome completo" required />
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Mensagem ou interesse</label>
+            <textarea name="mensagem" rows="3" placeholder="Quero ser voluntário / Tenho dúvidas sobre doação..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Entrar em contato</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">Instituto Raiz</p>
+        <p class="footer-copy">CNPJ 12.345.678/0001-90 · OSCIP · Mogi Mirim, SP</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+      <p class="footer-legal">© 2024 Instituto Raiz. Todos os direitos reservados.</p>
+    </div>
+ <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; text-align: center;">
+        <a href="../index.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+          ← Voltar ao Portfólio de Landing Pages
+        </a>
+      </div>
+
+      <p class="footer-legal" style="width: 100%; margin-top: 10px;">© 2024 Clínica Pata & Vida. Todos os direitos reservados.</p>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

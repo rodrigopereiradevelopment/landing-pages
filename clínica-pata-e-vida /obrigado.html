@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pata & Vida — Agendamento Recebido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,300&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --accent: #5c8a62; --text: #1c2b1e; --muted: #6b7d6e; --bg: #f7f6f3; --border: #e2e8e2; }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .wrap { max-width: 520px; animation: up 0.8s ease both; }
+    @keyframes up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+    .check {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: #eef3ee;
+      border: 1.5px solid #c4ddc6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 1.8rem;
+    }
+    .tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    h1 em { font-style: italic; color: var(--accent); }
+    p { color: var(--muted); font-size: 0.92rem; line-height: 1.7; margin-bottom: 2rem; }
+    a {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      border-radius: 100px;
+      transition: background 0.3s;
+    }
+    a:hover { background: #4a7550; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="check">🐾</div>
+    <span class="tag">Pata & Vida · Veterinária</span>
+    <h1>Agendamento<br /><em>recebido!</em></h1>
+    <p>Nossa equipe entrará em contato em até 2 horas para confirmar o horário da consulta. Obrigado pela confiança!</p>
+    <a href="index.html">Voltar ao início</a>
+  </div>
+</body>
+</html>

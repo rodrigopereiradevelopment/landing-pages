@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vulcano Pizzaria — Fogo de Verdade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">VULCANO</a>
+    <ul class="nav-links">
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato" class="nav-cta">Reservar</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="embers">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">Desde 1998 · Mogi Mirim, SP</p>
+      <h1 class="hero-title reveal">
+        Fogo de<br /><em>verdade.</em><br />Sabor eterno.
+      </h1>
+      <p class="hero-sub reveal">Massas artesanais. Forno a lenha. Ingredientes que respeitam a origem.</p>
+      <div class="hero-actions reveal">
+        <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+        <a href="#contato" class="btn btn-ghost">Fazer Reserva</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>role para baixo</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CARDAPIO -->
+  <section class="section" id="cardapio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cardápio</span>
+        <h2 class="section-title">Nossas especialidades</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #3a1a08;"></div>
+          <div class="menu-info">
+            <span class="menu-badge">Carro-chefe</span>
+            <h3>Vulcano Especial</h3>
+            <p>Molho rústico, mussarela bufala, pepperoni artesanal, pimentão assado e manjericão fresco</p>
+            <span class="menu-price">R$ 62,90</span>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #1a2a1a;"></div>
+          <div class="menu-info">
+            <h3>Funghi Trufado</h3>
+            <p>Cogumelos shimeji, Paris e portobello, creme de gorgonzola e azeite trufado</p>
+            <span class="menu-price">R$ 58,90</span>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #2a1a1a;"></div>
+          <div class="menu-info">
+            <h3>Margherita da Casa</h3>
+            <p>Molho San Marzano, fior di latte, tomate cereja e manjericão do horto próprio</p>
+            <span class="menu-price">R$ 46,90</span>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #1a1a2a;"></div>
+          <div class="menu-info">
+            <h3>Calabresa Defumada</h3>
+            <p>Molho caseiro, mussarela, calabresa defumada artesanal, cebola roxa e azeitonas</p>
+            <span class="menu-price">R$ 49,90</span>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #2a2a1a;"></div>
+          <div class="menu-info">
+            <h3>Quatro Queijos</h3>
+            <p>Mussarela, provolone, gorgonzola, parmesão ralado na hora e mel de abelha nativa</p>
+            <span class="menu-price">R$ 54,90</span>
+          </div>
+        </div>
+        <div class="menu-card reveal">
+          <div class="menu-img" style="--bg: #2a1a2a;"></div>
+          <div class="menu-info">
+            <span class="menu-badge">Novo</span>
+            <h3>Burrata & Prosciutto</h3>
+            <p>Base branca, burrata fresca, presunto cru italiano, rúcula e pesto de pistache</p>
+            <span class="menu-price">R$ 68,90</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-visual reveal">
+        <div class="sobre-block"></div>
+        <div class="sobre-number">25<span>anos</span></div>
+      </div>
+      <div class="sobre-text reveal">
+        <span class="section-tag">Nossa história</span>
+        <h2 class="section-title">Nascemos do fogo,<br /><em>crescemos com você.</em></h2>
+        <p>Em 1998, Antônio Ferrara chegou do interior de Nápoles com uma mala e uma receita de família. O forno a lenha que ele mesmo construiu ainda é o coração do Vulcano.</p>
+        <p>Hoje, seus filhos mantêm viva a tradição: massa de longa fermentação, molho cozido em fogo baixo por seis horas e ingredientes escolhidos diariamente na feira.</p>
+        <a href="#contato" class="btn btn-primary" style="margin-top:2rem;">Venha nos conhecer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Galeria</span>
+        <h2 class="section-title">Da brasa à mesa</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item g-tall reveal" style="--gc: #1a0a00;"><span>Forno a Lenha</span></div>
+        <div class="gallery-item reveal" style="--gc: #0a1a00;"><span>Ingredientes</span></div>
+        <div class="gallery-item reveal" style="--gc: #1a001a;"><span>A Massa</span></div>
+        <div class="gallery-item g-wide reveal" style="--gc: #001a1a;"><span>O Ambiente</span></div>
+        <div class="gallery-item reveal" style="--gc: #1a0a0a;"><span>A Brasa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container contato-grid">
+      <div class="contato-info reveal">
+        <span class="section-tag">Fale conosco</span>
+        <h2 class="section-title">Reserve sua<br /><em>mesa agora.</em></h2>
+        <div class="info-items">
+          <div class="info-item">
+            <span class="info-icon">◎</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Oliveiras, 142 — Centro<br />Mogi Mirim, SP</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">◎</span>
+            <div>
+              <strong>Horário</strong>
+              <p>Ter – Sex: 18h às 23h<br />Sáb – Dom: 12h às 23h</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">◎</span>
+            <div>
+              <strong>Telefone</strong>
+              <p>(19) 99999-0000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contato-form reveal">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(19) 99999-0000" />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Data, horário, número de pessoas..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">VULCANO</p>
+      <p class="footer-copy">© 2024 Vulcano Pizzaria. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">iFood</a>
+      </div>
+    </div>
+<div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; text-align: center;">
+        <a href="../index.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+          ← Voltar ao Portfólio de Landing Pages
+        </a>
+      </div>
+
+      <p class="footer-legal" style="width: 100%; margin-top: 10px;">© 2024 Clínica Pata & Vida. Todos os direitos reservados.</p>
+  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vulcano — Mensagem Enviada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg:     #0d0b09;
+      --accent: #e8620a;
+      --text:   #f0ece4;
+      --muted:  #9a8f7e;
+    }
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .wrap { max-width: 560px; animation: fadein 1s ease both; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+    .icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1px solid rgba(232,98,10,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 6vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+    h1 em { font-style: italic; color: var(--accent); }
+    p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    a {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: background 0.3s;
+    }
+    a:hover { background: #f0a000; }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(232,98,10,0.4);
+      margin: 2rem auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="icon">✓</div>
+    <p class="logo">Vulcano Pizzaria</p>
+    <h1>Mensagem<br /><em>recebida!</em></h1>
+    <div class="divider"></div>
+    <p>
+      Obrigado pelo contato. Nossa equipe retornará em até 24 horas
+      para confirmar sua reserva. Enquanto isso, siga-nos no Instagram
+      para ver nossas novidades do forno.
+    </p>
+    <a href="index.html">Voltar ao início</a>
+  </div>
+</body>
+</html>
