@@ -257,6 +257,17 @@ body {
 
 /* IMPACTO */
 .impacto { background: var(--bg-dark); padding: 7rem 0; }
+.impacto-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    flex-wrap: wrap; /* Para ficar um embaixo do outro no celular */
+}
+
+.sobre-img-main, .impacto-conteudo {
+    flex: 1; /* Faz os dois lados terem o mesmo tamanho */
+    min-width: 300px; /* Impede que fiquem muito esmagados */
+}
 .impacto .section-tag { color: var(--accent-lt); }
 .impacto .section-title { color: #fff; }
 .impacto .section-title em { color: var(--accent); }
@@ -277,7 +288,56 @@ body {
   margin-bottom: 0.5rem;
 }
 .impact-item span { font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
+.grid-impacto-v2 {
+    display: grid;
+    /* Duas colunas iguais no topo, uma linha automática para os números */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "foto titulo"
+        "numeros numeros"; /* Os números ocupam as duas colunas */
+    gap: 40px;
+    align-items: center;
+}
 
+.impacto-imagem {
+    grid-area: foto;
+}
+
+.impacto-imagem img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+}
+
+.impacto-cabecalho {
+    grid-area: titulo;
+    text-align: left;
+}
+
+.impacto-stats {
+    grid-area: numeros;
+    display: flex;
+    justify-content: space-between; /* Distribui os números na horizontal */
+    padding-top: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1); /* Opcional: linha divisória */
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    .grid-impacto-v2 {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "titulo"
+            "foto"
+            "numeros";
+    }
+    
+    .impacto-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
 /* DOE */
 .doe { background: var(--bg); padding: 7rem 0; border-top: 1px solid var(--border); }
 .doe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }

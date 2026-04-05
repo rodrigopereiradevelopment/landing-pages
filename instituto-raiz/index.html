@@ -14,7 +14,9 @@
 
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">Instituto Raiz</a>
+    <a href="#" class="nav-logo">
+      <img src="img/institutoraiz.webp" alt="Logo Instituto Raiz" style="height: 130px; width: auto;">
+    </a>
     <ul class="nav-links">
       <li><a href="#missao">Missão</a></li>
       <li><a href="#programas">Programas</a></li>
@@ -135,13 +137,23 @@
   </section>
 
   <!-- IMPACTO -->
-  <section class="impacto" id="impacto">
+<section class="impacto" id="impacto">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Nosso impacto</span>
-        <h2 class="section-title">Números que<br /><em>representam pessoas.</em></h2>
-      </div>
-      <div class="impact-grid">
+      
+      <div class="impacto-wrapper" style="display: flex; align-items: flex-start; gap: 60px; flex-wrap: wrap;">
+        
+        <div class="sobre-img-main" style="flex: 1; min-width: 400px;">
+          <img src="img/raiz.webp" alt="Instituto Raiz" style="width: 100%; height: auto; border-radius: 24px;">
+        </div>
+
+        <div class="impacto-cabecalho" style="flex: 1; min-width: 400px; padding-top: 1rem;">
+          <div class="section-header reveal" style="text-align: left; margin-bottom: 2rem;">
+            <span class="section-tag" style="color: #f0d5c0;">Nosso impacto</span>
+            <h2 class="section-title" style="color: #fff;">Números que<br /><em>representam pessoas.</em></h2>
+          </div>
+        </div>
+
+      </div> <div class="impact-grid" style="margin-top: 5rem; background: none;">
         <div class="impact-item reveal">
           <strong>16</strong>
           <span>anos de atuação</span>
@@ -156,11 +168,11 @@
         </div>
         <div class="impact-item reveal">
           <strong>94%</strong>
-          <span>dos jovens formados empregados</span>
+          <span>dos jovens empregados</span>
         </div>
       </div>
-    </div>
-  </section>
+
+    </div> </section>
 
   <!-- DOE -->
   <section class="doe" id="doe">
@@ -213,11 +225,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <p class="footer-logo">Instituto Raiz</p>
+        <p class="footer-logo">
+          <img src="img/institutoraiz.webp" alt="Logo Instituto Raiz" style="height: 120px; filter: brightness(0) invert(1);"> 
+        </p>
         <p class="footer-copy">CNPJ 12.345.678/0001-90 · OSCIP · Mogi Mirim, SP</p>
       </div>
       <div class="footer-links">
@@ -225,16 +238,14 @@
         <a href="#">Facebook</a>
         <a href="#">WhatsApp</a>
       </div>
-      <p class="footer-legal">© 2024 Instituto Raiz. Todos os direitos reservados.</p>
+      <p class="footer-legal">© 2026 Instituto Raiz. Todos os direitos reservados.</p>
     </div>
- <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; text-align: center;">
-        <a href="../index.html" style="color: var(--accent); text-decoration: none; font-size: 0.9rem; font-weight: 500;">
-          ← Voltar ao Portfólio de Landing Pages
-        </a>
-      </div>
 
-      <p class="footer-legal" style="width: 100%; margin-top: 10px;">© 2024 Clínica Pata & Vida. Todos os direitos reservados.</p>
-    
+    <div style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; width: 100%; text-align: center;">
+      <a href="../index.html" style="color: #c4622d; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+        ← Voltar ao Portfólio de Landing Pages
+      </a>
+    </div>
   </footer>
 
   <script src="script.js"></script>

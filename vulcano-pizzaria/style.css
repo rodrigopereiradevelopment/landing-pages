@@ -448,6 +448,17 @@ body {
 
 .g-tall { grid-row: span 2; }
 .g-wide { grid-column: span 2; }
+/* Se quiser que o texto mude para a cor de destaque (laranja/terracota) no hover */
+.gallery-item:hover span { 
+    color: var(--accent); 
+    transition: var(--transition);
+}
+
+/* Garante que a imagem dê um leve zoom no hover */
+.gallery-item:hover img {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
 
 /* ---- CONTATO ---- */
 .contato {
