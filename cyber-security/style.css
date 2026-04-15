@@ -1,10 +1,10 @@
 :root {
     --primary: #00ff88;
-    --bg-dark: #0a0b10;
-    --card-bg: #161b22;
+    --bg-dark: #010409;
+    --card-bg: rgba(22, 27, 34, 0.7);
     --text: #e6edf3;
-    --border: #30363d;      /* Faltava essa linha */
-    --gray-text: #8b949e;   /* Faltava essa linha */
+    --border: rgba(48, 54, 61, 0.5);      /* Faltava essa linha */
+    --gray-text: #a1a1a1;   /* Faltava essa linha */
 }
 
 * { 
@@ -108,17 +108,17 @@ h1 span {
     gap: 5px;
 }
 
-.timer-box span {   
-    font-size: 2.5rem;
-    font-weight: bold; 
-    color: var(--primary);
-    display: block;
+.timer-box, .faq-item {
+    background: rgba(22, 27, 34, 0.4) !important; /* Transparência */
+    backdrop-filter: blur(8px); /* Desfoca o código que passa atrás */
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 255, 136, 0.1);
+    transition: all 0.3s ease;
 }
 
-.timer-box:hover {
+.timer-box:hover, .faq-item:hover {
     border-color: var(--primary);
-    transform: translateY(-5px);
-    transition: 0.3s;
+    background: rgba(22, 27, 34, 0.8) !important;
 }
 
 .btn-cta { 
@@ -235,6 +235,34 @@ input:focus { border-color: var(--primary); }
 
 .footer span { color: var(--primary); }
 
+/* Melhora a leitura sobre o fundo animado */
+h1 span, h2, p, .timer-box {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Deixa o conteúdo flutuando com mais clareza */
+.hero-cyber, .hero, #faq, #contato, header {
+    position: relative;
+    z-index: 2; /* Garante que está acima do canvas */
+}
+
+/* No style.css */
+h1, p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 5px rgba(0, 0, 0, 1);
+}
+
+/* O fundo animado com a nova cor profunda */
+#cyber-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: radial-gradient(circle at center, #0a0b10 0%, #000000 100%);
+    pointer-events: none;
+}
+
 /* --- Animações --- */
 .reveal { 
     opacity: 1;
@@ -242,4 +270,21 @@ input:focus { border-color: var(--primary); }
 
  .js-enabled .reveal { 
     opacity: 0; 
+}
+
+#cyber-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Garante que fica atrás de tudo */
+    background-color: #000;
+    pointer-events: none;
+}
+
+/* Garante que o conteúdo da página fique por cima e legível */
+.hero-cyber, .hero.reveal, #faq {
+    position: relative;
+    z-index: 2;
 }
